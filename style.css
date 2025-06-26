@@ -1,311 +1,240 @@
-/* style.css - SaveItBro Dowry Trend Estimator (Professional, Neutral) */
-/* Trillion-dollar Tailwind-inspired theme for all calculators */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;600;700&display=swap');
+/* Clean Black & Off-White Theme for SaveItBro */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 body {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(120deg, #fffbe6 0%, #fff 60%, #e6ffe6 100%);
+  background: #f9fafb;
+  color: #18181b;
   min-height: 100vh;
-}
-.nav-logo {
-  font-family: 'Inter', sans-serif !important;
-  font-weight: 900 !important;
-  letter-spacing: -0.01em;
-  color: #ff9933 !important;
-  background: linear-gradient(90deg, #FF9933 30%, #fff 50%, #138808 70%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  text-align: left;
 }
 .navbar {
-  background: rgba(255,255,255,0.95);
-  box-shadow: 0 2px 16px 0 rgba(255,153,51,0.08), 0 1.5px 0 0 #FF9933;
-  border-radius: 1.5rem;
-  margin: 0.5rem auto 1.5rem auto;
-  max-width: 1200px;
-}
-.nav-links a {
-  color: #FF9933;
-  font-weight: 700;
-  padding: 0.5rem 1.1rem;
-  border-radius: 9999px;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-}
-.nav-links a.active, .nav-links a:hover {
-  background: linear-gradient(90deg, #FF9933 60%, #138808 100%);
-  color: #fff !important;
-  box-shadow: 0 2px 8px 0 #ff993344;
-}
-.lang-switch select {
-  border-radius: 9999px;
-  border: 1.5px solid #FF9933;
-  background: #fff;
-  color: #FF9933;
-  font-weight: 600;
-  padding: 0.2rem 1.2rem 0.2rem 0.5rem;
-  margin-left: 0.3rem;
-}
-.hero {
-  background: linear-gradient(120deg, #fffbe6 0%, #fff 60%, #e6ffe6 100%);
-  border-radius: 2rem;
-  box-shadow: 0 4px 32px 0 #ff993322;
-  margin: 1.5rem auto 1.5rem auto;
-  max-width: 900px;
-  padding: 2.5rem 1.5rem 2rem 1.5rem;
-}
-.hero h1 {
-  font-size: 2.5rem;
-  background: linear-gradient(90deg, #FF9933 60%, #138808 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  font-weight: 900;
+  background: #000;
+  color: #fff;
+  padding: 0.7rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1000;
   margin-bottom: 0.5rem;
 }
+.nav-logo {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.01em;
+  font-family: 'Inter', sans-serif;
+}
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.navbar-btn {
+  color: #fff;
+  font-weight: 600;
+  padding: 0.5rem 1.3rem;
+  border-radius: 0.7rem;
+  transition: background 0.18s, color 0.18s;
+  text-decoration: none;
+  font-size: 1.08rem;
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+.navbar-btn.active, .navbar-btn:hover {
+  background: #fff;
+  color: #18181b !important;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  left: 0;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  color: #18181b;
+  padding: 0.8rem 1.2rem;
+  text-decoration: none;
+  display: block;
+  transition: background 0.15s;
+  border-radius: 0.5rem;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background: #18181b;
+  color: #fff;
+}
+.hero, .calculator-section, .about-section, .regional-section, .faq-section, .resources-section {
+  background: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 4px 32px 0 #0001;
+  margin: 0 auto 1.2rem auto;
+  max-width: 700px;
+  padding: 2rem 1.2rem 1.2rem 1.2rem;
+  text-align: left;
+}
+.hero h1 {
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #18181b;
+  margin-bottom: 0.7rem;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+.hero .brand {
+  color: #000;
+  font-weight: 900;
+  font-size: 2.1rem;
+  margin-bottom: 0.2rem;
+  display: block;
+  text-align: left;
+}
 .subtitle {
-  background: #fff8e1;
-  border-left: 5px solid #FF9933;
+  background: #f9fafb;
+  border-left: 4px solid #000;
   border-radius: 1rem;
-  font-size: 1.2rem;
-  color: #333;
-  margin: 0.5rem auto 1.2rem auto;
-  padding: 0.7rem 1.2rem;
-  box-shadow: 0 2px 12px 0 #ff993322;
-  max-width: 600px;
+  font-size: 1.18rem;
+  color: #18181b;
+  margin: 0.7rem auto 1.5rem auto;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 1px 8px 0 #0001;
+  max-width: 520px;
+  text-align: left;
 }
 .hero-btn {
-  background: linear-gradient(90deg, #FF9933 60%, #138808 100%);
+  background: #000;
   color: #fff !important;
   font-weight: 700;
   border: none;
   border-radius: 9999px;
-  padding: 0.7rem 2.5rem;
-  font-size: 1.25rem;
-  box-shadow: 0 2px 12px 0 #ff993344;
-  margin-top: 1.2rem;
+  padding: 0.9rem 2.5rem;
+  font-size: 1.18rem;
+  box-shadow: 0 2px 12px 0 #0002;
+  margin-top: 1.5rem;
   transition: transform 0.15s, box-shadow 0.15s;
+  letter-spacing: 0.01em;
+  text-align: left;
 }
 .hero-btn:hover {
   transform: scale(1.04);
-  box-shadow: 0 4px 24px 0 #ff993366;
+  background: #18181b;
+  color: #fff;
 }
-main {
-  max-width: 720px;
-  margin: 2em auto 0 auto;
-  background: #fff;
-  border-radius: 1.2rem;
-  box-shadow: 0 8px 32px rgba(26,35,126,0.08);
-  padding: 2.2em 1.5em 1.5em 1.5em;
-  border: 1.5px solid #e0e0e0;
-}
-section {
-  margin-bottom: 2.2em;
-}
-.about-section, .faq-section, .resources-section, .feedback-section {
-  padding-bottom: 1em;
-}
-.about-section h2, .faq-section h2, .resources-section h2, .calculator-section h2, .insight-section h2, .feedback-section h2 {
-  color: #FF9933;
-  margin-bottom: 0.5em;
-  font-size: 1.2em;
+.calculator-section h2, .about-section h2, .regional-section h2, .faq-section h2, .resources-section h2 {
+  color: #000;
+  font-size: 1.7rem;
   font-weight: 900;
-}
-.calculator-section form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.1rem;
-  margin-bottom: 1.5em;
-}
-.form-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.7em 1.2em;
-  align-items: center;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+  text-align: left;
 }
 .form-group label {
   font-weight: 600;
-  color: #333;
+  color: #18181b;
   margin-bottom: 0.3rem;
+  text-align: left;
 }
-input[type="number"], select {
-  border-radius: 0.75rem;
-  border: 1.5px solid #FF9933;
-  padding: 0.5rem 1rem;
+.form-group input, .form-group select {
+  border-radius: 0.7rem;
+  border: 1px solid #000;
+  padding: 0.6rem 1.1rem;
   margin-top: 0.2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
   width: 100%;
-  font-size: 1.1rem;
-  background: #fffbe6;
-  color: #333;
+  font-size: 1.08rem;
+  background: #f9fafb;
+  color: #18181b;
   font-family: 'Inter', sans-serif;
+  text-align: left;
 }
-input[type="radio"], input[type="checkbox"] {
-  accent-color: #1a237e;
-  margin-right: 0.2em;
-}
-.mode-toggle {
-  align-items: center;
-  gap: 0.5em;
-}
-#mode-toggle {
-  width: 1.5em;
-  height: 1.5em;
-  accent-color: #ffd600;
-}
-#mode-label {
-  font-weight: 500;
-  color: #1a237e;
-  margin-left: 0.3em;
-}
-button, .calculate-btn, .reset-btn {
-  background: linear-gradient(90deg, #FF9933 60%, #138808 100%);
+.calculate-btn, .reset-btn, #share-btn, #try-again-btn {
+  background: #000;
   color: #fff !important;
   font-weight: 700;
   border: none;
   border-radius: 9999px;
-  padding: 0.7rem 2.5rem;
-  font-size: 1.1rem;
-  box-shadow: 0 2px 12px 0 #ff993344;
+  padding: 0.8rem 2.3rem;
+  font-size: 1.08rem;
+  box-shadow: 0 2px 8px 0 #0002;
   margin-top: 0.7rem;
   margin-bottom: 0.7rem;
-  transition: transform 0.15s, box-shadow 0.15s;
+  transition: background 0.15s, transform 0.15s, box-shadow 0.15s;
+  text-align: left;
 }
-button:hover, .calculate-btn:hover, .reset-btn:hover {
+.calculate-btn:hover, .reset-btn:hover, #share-btn:hover, #try-again-btn:hover {
+  background: #18181b;
+  color: #fff;
   transform: scale(1.04);
-  box-shadow: 0 4px 24px 0 #ff993366;
+  box-shadow: 0 4px 16px 0 #0002;
 }
-.reset-btn {
-  background: #e3f2fd;
-  color: #1a237e;
-  border: 1.5px solid #90caf9;
-  margin-left: 0.7em;
-}
-.reset-btn:hover {
-  background: #bbdefb;
-}
-#result-section {
-  margin-top: 2em;
-  text-align: center;
-  animation: fadeIn 1s;
-}
-#result-section.hidden {
-  display: none;
-}
-#result-title {
-  font-size: 1.3em;
-  color: #1a237e;
-  margin: 0.5em 0 0.2em 0;
-  font-weight: 600;
-}
-#result-amount {
-  font-size: 2em;
-  font-weight: bold;
-  color: #ffd600;
-  margin: 0.2em 0 0.5em 0;
-  letter-spacing: 1px;
-  text-shadow: 1px 2px 8px #bdbdbd33;
-}
-#result-breakdown {
-  list-style: none;
-  padding: 0;
-  margin: 1em 0 1.5em 0;
-  color: #424242;
-  font-size: 1.05em;
-}
-#result-breakdown li {
-  margin-bottom: 0.3em;
-}
-#result-insight {
-  margin: 1em 0 1.5em 0;
-  color: #1a237e;
-  font-size: 1.05em;
-}
-#share-btn, #try-again-btn {
-  margin: 0.5em 0.3em;
-}
-#share-links {
-  margin: 0.7em 0 1em 0;
-}
-#share-links a {
-  margin: 0 0.3em;
-  font-size: 1.5em;
-  text-decoration: none;
-  color: #1a237e;
-  transition: color 0.2s;
-}
-#share-links a:hover {
-  color: #ffd600;
-}
-.insight-section {
-  text-align: center;
-  padding: 1em 0 0.5em 0;
-}
-#dowry-chart {
-  max-width: 100%;
-  margin: 0 auto 1em auto;
-  background: #f7f7fa;
-  border-radius: 0.5em;
-}
-#insight-summary {
-  color: #424242;
-  font-size: 1em;
-  margin-top: 0.5em;
-}
-.feedback-section {
-  text-align: center;
-  margin-bottom: 2em;
-}
-#feedback-form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.7em;
-  align-items: center;
-  margin: 0 auto;
-  max-width: 400px;
-}
-#feedback-form input[type="text"] {
-  width: 100%;
-  padding: 0.4em 0.7em;
-  border-radius: 0.5em;
-  border: 1.5px solid #bdbdbd;
-  font-size: 1em;
-}
-#feedback-message {
-  margin-top: 0.7em;
-  color: #1a237e;
-  font-weight: 500;
-}
-.faq-section details {
-  margin-bottom: 1em;
-}
-.faq-section summary {
-  font-weight: 600;
-  color: #1a237e;
-  cursor: pointer;
-}
-.resources-section ul {
-  padding-left: 1.2em;
-}
-.resources-section li {
-  margin-bottom: 0.5em;
-}
-.resources-section a {
-  color: #1a237e;
-  text-decoration: underline;
+.adsbygoogle {
+  margin: 2rem 0 !important;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px 0 #0001;
 }
 footer {
-  background: #fffbe6;
-  color: #FF9933;
-  font-weight: 700;
+  background: #fff;
+  color: #888;
+  font-weight: 600;
   border-radius: 1.5rem;
-  box-shadow: 0 -2px 16px 0 #ff993322;
-  margin: 2rem auto 0 auto;
-  max-width: 900px;
-  padding: 1.2rem 1.5rem;
+  box-shadow: 0 -2px 8px 0 #0001;
+  margin: 2.5rem auto 0 auto;
+  max-width: 700px;
+  padding: 1.5rem 2rem;
   text-align: center;
+  font-size: 1.08rem;
+}
+ul, ol {
+  text-align: left;
+  margin-left: 1.2rem;
+  padding-left: 1.2rem;
+}
+ul li, ol li {
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+h1, h2, h3, h4, h5, h6, p, label, span, a, li, ul, ol, input, select, button {
+  font-family: 'Inter', sans-serif !important;
+  text-align: left !important;
+  letter-spacing: 0;
+}
+.faq-list h3 {
+  margin-top: 1.2rem;
+  margin-bottom: 0.2rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #18181b;
+  text-align: left;
+}
+.faq-list p {
+  margin-bottom: 0.7rem;
+  text-align: left;
 }
 @media (max-width: 900px) {
   .hero, .calculator-section, .about-section, .regional-section, .faq-section, .resources-section, footer {
-    max-width: 98vw;
+    max-width: 99vw;
+    padding: 1.2rem 0.5rem;
+  }
+  .navbar {
+    max-width: 99vw;
     padding: 1.2rem 0.5rem;
   }
 }
@@ -315,15 +244,16 @@ footer {
     align-items: stretch !important;
     gap: 0.2rem !important;
   }
-  .nav-links {
+  .navbar-buttons {
     flex-direction: column !important;
     gap: 0.1rem !important;
     width: 100% !important;
     align-items: stretch !important;
+    margin-left: 0 !important;
   }
-  .nav-links a {
+  .navbar-btn {
     width: 100% !important;
-    text-align: left;
+    text-align: left !important;
     padding: 0.7rem 1rem;
   }
   .hero {
@@ -334,21 +264,17 @@ footer {
   }
   .subtitle {
     font-size: 1rem;
-    padding: 0.5rem 0.7rem;
+    padding: 0.7rem 0.7rem;
   }
   .form-group input, .form-group select {
     font-size: 1rem;
   }
   .calculate-btn, .reset-btn, #share-btn, #try-again-btn {
     font-size: 1rem;
-    padding: 0.5rem 1.2rem;
+    padding: 0.6rem 1.2rem;
   }
   footer {
     font-size: 1rem;
     padding: 0.7rem 0.5rem;
   }
-}
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
 }

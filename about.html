@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>About SaveItBro.fun – India’s Trusted Wedding Calculators</title>
+  <meta name="description" content="Learn about SaveItBro.fun, India’s most trusted platform for wedding calculators, dowry estimators, and cultural tools. Discover our mission, team, and commitment to accuracy and privacy.">
+  <meta name="keywords" content="about saveitbro, about wedding calculator, about dowry calculator, Indian wedding tools, saveitbro.fun">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://www.saveitbro.fun/about.html">
+  <meta name="author" content="SaveItBro Team">
+  <meta name="theme-color" content="#FF9933">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/jpeg" href="dahejlogo.jpg">
+  <link rel="apple-touch-icon" href="dahejlogo.jpg">
+  <meta name="google-adsense-account" content="ca-pub-9079816190181966">
+  <style>html{font-size:16px;}body{font-family:'Inter',sans-serif;}</style>
+</head>
+<body>
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo" aria-label="SaveItBro logo">SaveItBro</a>
+    <div class="navbar-buttons">
+      <a href="index.html" class="navbar-btn">Home</a>
+      <div class="dropdown">
+        <button class="navbar-btn">Calculators &#9662;</button>
+        <div class="dropdown-content">
+          <a href="shaadi-budget.html">Shaadi Budget</a>
+          <a href="kundli-milan.html">Kundli Milan</a>
+          <a href="manglik.html">Manglik Checker</a>
+          <a href="gold-invest.html">Gold Investment</a>
+          <a href="festival-budget.html">Festival Budget</a>
+          <a href="rashi-nakshatra.html">Rashi/Nakshatra</a>
+          <a href="baby-names.html">Baby Names</a>
+          <a href="karva-chauth.html">Karva Chauth</a>
+          <a href="inlaw-loan.html">In-law Loan</a>
+        </div>
+      </div>
+      <a href="about.html" class="navbar-btn active">About</a>
+    </div>
+  </nav>
+  <main class="about-section">
+    <h1>About SaveItBro – India’s Most Comprehensive Wedding Calculators</h1>
+    <p>SaveItBro is your trusted destination for modern, culturally relevant, and SEO-optimized Indian wedding calculators. Our platform empowers users with a suite of free tools designed for 2025 and beyond, including:</p>
+    <ul>
+      <li><b>Dahej (Dowry) Calculator</b> – Instantly estimate dowry trends by region, income, job, and education. Raise awareness, not endorsement.</li>
+      <li><b>Shaadi Budget Calculator</b> – Plan your wedding expenses with precision, tailored for Indian families and traditions.</li>
+      <li><b>Kundli Milan & Manglik Checker</b> – Match horoscopes and check manglik dosha for marriage compatibility.</li>
+      <li><b>Gold Investment & Festival Budget Tools</b> – Optimize gold purchases and manage festival spending for Indian households.</li>
+      <li><b>Rashi/Nakshatra & Baby Names Finder</b> – Discover auspicious names and astrological details for your child.</li>
+      <li><b>Karva Chauth & In-law Loan Calculators</b> – Unique tools for special occasions and family finance.</li>
+    </ul>
+    <p>All our calculators are 100% frontend, mobile-friendly, and privacy-focused. We use the latest research and data to provide realistic, unbiased results for Indian users worldwide.</p>
+    <p><b>Why Choose SaveItBro?</b></p>
+    <ul>
+      <li>Most accurate and up-to-date Indian wedding calculators for 2025</li>
+      <li>SEO-optimized, fast, and mobile-first design</li>
+      <li>No data collection – your privacy is our priority</li>
+      <li>Trusted by thousands of users across India and the diaspora</li>
+      <li>Created by a team passionate about Indian culture, technology, and social awareness</li>
+    </ul>
+    <p>For feedback, suggestions, or partnership inquiries, contact us at <a href="mailto:info@saveitbro.fun">info@saveitbro.fun</a>.</p>
+    <p><b>Disclaimer:</b> SaveItBro does not endorse or promote dowry or any regressive practice. Our tools are for awareness, education, and empowerment only.</p>
+  </main>
+  <footer>
+    <p>&copy; 2025 SaveItBro. All rights reserved.</p>
+  </footer>
+  <script>
+// Improved dropdown: stays open when mouse is over dropdown or its links
+(function() {
+  var dropdown = document.querySelector('.dropdown');
+  var dropdownContent = document.querySelector('.dropdown-content');
+  if (!dropdown || !dropdownContent) return;
+  var timer;
+  function showDropdown() {
+    clearTimeout(timer);
+    dropdownContent.style.display = 'block';
+  }
+  function hideDropdown() {
+    timer = setTimeout(function() {
+      dropdownContent.style.display = 'none';
+    }, 200);
+  }
+  dropdown.addEventListener('mouseenter', showDropdown);
+  dropdown.addEventListener('mouseleave', hideDropdown);
+  dropdownContent.addEventListener('mouseenter', showDropdown);
+  dropdownContent.addEventListener('mouseleave', hideDropdown);
+  // Keyboard accessibility
+  var btn = dropdown.querySelector('.navbar-btn');
+  btn.addEventListener('focus', showDropdown);
+  btn.addEventListener('blur', hideDropdown);
+  var links = dropdownContent.querySelectorAll('a');
+  links.forEach(function(link) {
+    link.addEventListener('focus', showDropdown);
+    link.addEventListener('blur', hideDropdown);
+  });
+})();
+</script>
+</body>
+</html>

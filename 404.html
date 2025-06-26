@@ -2,33 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>404 – Page Not Found | SaveItBro.fun</title>
-  <link rel="icon" href="assets/logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>404 Not Found – SaveItBro.fun</title>
+  <meta name="description" content="Page not found. Explore India’s most accurate wedding and dowry calculators, budget tools, and astrology resources at SaveItBro.fun.">
+  <meta name="keywords" content="404, not found, saveitbro.fun, wedding calculator, dowry calculator, Indian wedding tools">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://www.saveitbro.fun/404.html">
+  <meta name="author" content="SaveItBro Team">
+  <meta name="theme-color" content="#FF9933">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/jpeg" href="dahejlogo.jpg">
+  <link rel="apple-touch-icon" href="dahejlogo.jpg">
+  <style>html{font-size:16px;}body{font-family:'Inter',sans-serif;}</style>
   <meta name="google-adsense-account" content="ca-pub-9079816190181966">
-  <style>
-    body { font-family: Arial, sans-serif; text-align: center; padding: 4rem; background: #fff; color: #FF9933; }
-    h1 { font-size: 3rem; margin-bottom: 1rem; }
-    p { font-size: 1.25rem; }
-    a { color: #FF9933; text-decoration: underline; }
-    .nav-logo { 
-      font-size: 2rem; 
-      font-weight: bold; 
-      color: #FF9933; 
-      text-transform: uppercase; 
-      letter-spacing: 0.1rem; 
-      margin-bottom: 2rem; 
-      display: inline-block; 
-      text-align: center; 
-      aria-label="SaveItBro logo";
-    }
-  </style>
 </head>
 <body>
-  <span class="nav-logo">SaveItBro</span>
-  <h1>404</h1>
-  <p>Sorry, the page you are looking for does not exist.</p>
-  <p><a href="/">Go to Home</a></p>
+  <div class="container">
+    <div class="header">
+      <header>
+        <nav class="navbar" aria-label="Main navigation">
+          <a href="index.html" class="nav-logo" aria-label="SaveItBro logo">SaveItBro</a>
+          <div class="navbar-buttons">
+            <a href="index.html" class="navbar-btn">Home</a>
+            <div class="dropdown">
+              <button class="navbar-btn">Calculators &#9662;</button>
+              <div class="dropdown-content">
+                <a href="dahej-calculator.html">Dahej Calculator</a>
+                <a href="shaadi-budget.html">Shaadi Budget</a>
+                <a href="kundli-milan.html">Kundli Milan</a>
+                <a href="manglik.html">Manglik Checker</a>
+                <a href="gold-invest.html">Gold Investment</a>
+                <a href="festival-budget.html">Festival Budget</a>
+                <a href="rashi-nakshatra.html">Rashi/Nakshatra</a>
+                <a href="baby-names.html">Baby Names</a>
+                <a href="karva-chauth.html">Karva Chauth</a>
+                <a href="inlaw-loan.html">In-law Loan</a>
+              </div>
+            </div>
+            <a href="about.html" class="navbar-btn">About</a>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <main>
+      <h1>404</h1>
+      <p>Sorry, the page you are looking for does not exist.</p>
+      <p><a href="/">Go to Home</a></p>
+    </main>
+    <div class="footer">
+      &copy; 2023 SaveItBro.fun. All rights reserved.
+    </div>
+  </div>
+  <script>
+// Improved dropdown: stays open when mouse is over dropdown or its links
+(function() {
+  var dropdown = document.querySelector('.dropdown');
+  var dropdownContent = document.querySelector('.dropdown-content');
+  if (!dropdown || !dropdownContent) return;
+  var timer;
+  function showDropdown() {
+    clearTimeout(timer);
+    dropdownContent.style.display = 'block';
+  }
+  function hideDropdown() {
+    timer = setTimeout(function() {
+      dropdownContent.style.display = 'none';
+    }, 200);
+  }
+  dropdown.addEventListener('mouseenter', showDropdown);
+  dropdown.addEventListener('mouseleave', hideDropdown);
+  dropdownContent.addEventListener('mouseenter', showDropdown);
+  dropdownContent.addEventListener('mouseleave', hideDropdown);
+  // Keyboard accessibility
+  var btn = dropdown.querySelector('.navbar-btn');
+  btn.addEventListener('focus', showDropdown);
+  btn.addEventListener('blur', hideDropdown);
+  var links = dropdownContent.querySelectorAll('a');
+  links.forEach(function(link) {
+    link.addEventListener('focus', showDropdown);
+    link.addEventListener('blur', hideDropdown);
+  });
+})();
+</script>
 </body>
 </html>
