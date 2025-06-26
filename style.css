@@ -1,0 +1,337 @@
+/* style.css - SaveItBro Dowry Trend Estimator (Professional, Neutral) */
+body {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: #f7f7fa;
+  color: #2d2d2d;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1a237e;
+  color: #fff;
+  padding: 0.7em 2em;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px #1a237e22;
+}
+.nav-logo {
+  font-size: 1.4em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1em;
+  transition: color 0.2s;
+}
+.nav-links li a:hover {
+  color: #ffd600;
+}
+
+.disclaimer-banner {
+  background: #fffde7;
+  color: #b71c1c;
+  text-align: center;
+  font-size: 1em;
+  padding: 0.7em 0.5em;
+  border-bottom: 2px solid #ffd600;
+}
+.disclaimer-banner a {
+  color: #1a237e;
+  text-decoration: underline;
+}
+
+.hero {
+  background: linear-gradient(120deg, #e3f2fd 0%, #fffde7 100%);
+  padding: 2.5em 1em 2em 1em;
+  text-align: center;
+  border-bottom: 2px solid #e0e0e0;
+}
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.hero h1 {
+  font-size: 2.1em;
+  color: #1a237e;
+  margin-bottom: 0.2em;
+  font-weight: 700;
+}
+.subtitle {
+  color: #424242;
+  font-size: 1.15em;
+  margin-bottom: 0.5em;
+}
+.hero-btn {
+  display: inline-block;
+  margin-top: 1.2em;
+  background: #1a237e;
+  color: #fff;
+  border: none;
+  border-radius: 0.7em;
+  padding: 0.8em 2em;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+.hero-btn:hover {
+  background: #3949ab;
+  transform: scale(1.04);
+}
+
+main {
+  max-width: 720px;
+  margin: 2em auto 0 auto;
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 32px rgba(26,35,126,0.08);
+  padding: 2.2em 1.5em 1.5em 1.5em;
+  border: 1.5px solid #e0e0e0;
+}
+section {
+  margin-bottom: 2.2em;
+}
+.about-section, .faq-section, .resources-section, .feedback-section {
+  padding-bottom: 1em;
+}
+.about-section h2, .faq-section h2, .resources-section h2, .calculator-section h2, .insight-section h2, .feedback-section h2 {
+  color: #1a237e;
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.calculator-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin-bottom: 1.5em;
+}
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7em 1.2em;
+  align-items: center;
+}
+.form-group label {
+  font-size: 1rem;
+  color: #424242;
+}
+input[type="number"], select {
+  padding: 0.4em 0.7em;
+  border-radius: 0.5em;
+  border: 1.5px solid #bdbdbd;
+  font-size: 1em;
+  margin-left: 0.3em;
+}
+input[type="radio"], input[type="checkbox"] {
+  accent-color: #1a237e;
+  margin-right: 0.2em;
+}
+.mode-toggle {
+  align-items: center;
+  gap: 0.5em;
+}
+#mode-toggle {
+  width: 1.5em;
+  height: 1.5em;
+  accent-color: #ffd600;
+}
+#mode-label {
+  font-weight: 500;
+  color: #1a237e;
+  margin-left: 0.3em;
+}
+button, .calculate-btn, .reset-btn {
+  background: #1a237e;
+  color: #fff;
+  border: none;
+  border-radius: 0.7em;
+  padding: 0.7em 1.2em;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 0.5em;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+button:hover, .calculate-btn:hover, .reset-btn:hover {
+  background: #3949ab;
+  transform: scale(1.04);
+}
+.reset-btn {
+  background: #e3f2fd;
+  color: #1a237e;
+  border: 1.5px solid #90caf9;
+  margin-left: 0.7em;
+}
+.reset-btn:hover {
+  background: #bbdefb;
+}
+#result-section {
+  margin-top: 2em;
+  text-align: center;
+  animation: fadeIn 1s;
+}
+#result-section.hidden {
+  display: none;
+}
+#result-title {
+  font-size: 1.3em;
+  color: #1a237e;
+  margin: 0.5em 0 0.2em 0;
+  font-weight: 600;
+}
+#result-amount {
+  font-size: 2em;
+  font-weight: bold;
+  color: #ffd600;
+  margin: 0.2em 0 0.5em 0;
+  letter-spacing: 1px;
+  text-shadow: 1px 2px 8px #bdbdbd33;
+}
+#result-breakdown {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0 1.5em 0;
+  color: #424242;
+  font-size: 1.05em;
+}
+#result-breakdown li {
+  margin-bottom: 0.3em;
+}
+#result-insight {
+  margin: 1em 0 1.5em 0;
+  color: #1a237e;
+  font-size: 1.05em;
+}
+#share-btn, #try-again-btn {
+  margin: 0.5em 0.3em;
+}
+#share-links {
+  margin: 0.7em 0 1em 0;
+}
+#share-links a {
+  margin: 0 0.3em;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #1a237e;
+  transition: color 0.2s;
+}
+#share-links a:hover {
+  color: #ffd600;
+}
+.insight-section {
+  text-align: center;
+  padding: 1em 0 0.5em 0;
+}
+#dowry-chart {
+  max-width: 100%;
+  margin: 0 auto 1em auto;
+  background: #f7f7fa;
+  border-radius: 0.5em;
+}
+#insight-summary {
+  color: #424242;
+  font-size: 1em;
+  margin-top: 0.5em;
+}
+.feedback-section {
+  text-align: center;
+  margin-bottom: 2em;
+}
+#feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 400px;
+}
+#feedback-form input[type="text"] {
+  width: 100%;
+  padding: 0.4em 0.7em;
+  border-radius: 0.5em;
+  border: 1.5px solid #bdbdbd;
+  font-size: 1em;
+}
+#feedback-message {
+  margin-top: 0.7em;
+  color: #1a237e;
+  font-weight: 500;
+}
+.faq-section details {
+  margin-bottom: 1em;
+}
+.faq-section summary {
+  font-weight: 600;
+  color: #1a237e;
+  cursor: pointer;
+}
+.resources-section ul {
+  padding-left: 1.2em;
+}
+.resources-section li {
+  margin-bottom: 0.5em;
+}
+.resources-section a {
+  color: #1a237e;
+  text-decoration: underline;
+}
+footer {
+  text-align: center;
+  margin-top: 2em;
+  color: #757575;
+  font-size: 0.95em;
+  background: #e3f2fd;
+  border-top: 2px solid #ffd600;
+  padding: 1em 0 0.5em 0;
+}
+footer a {
+  color: #1a237e;
+  text-decoration: underline;
+}
+@media (max-width: 900px) {
+  main {
+    max-width: 98vw;
+    padding: 1em 0.2em 1em 0.2em;
+  }
+}
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 0.7em 0.5em;
+  }
+  .nav-links {
+    gap: 0.7em;
+    font-size: 0.95em;
+  }
+  .hero h1 {
+    font-size: 1.1em;
+  }
+  #result-amount {
+    font-size: 1.1em;
+  }
+  main {
+    padding: 0.7em 0.1em 0.7em 0.1em;
+  }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
