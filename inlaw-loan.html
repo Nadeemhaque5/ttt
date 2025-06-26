@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-Law Loan Calculator | Dowry EMI (For Fun!) – SaveItBro</title>
+    <meta name="description" content="A satirical calculator for desi weddings. Calculate how much your in-laws owe you or vice versa. Just for laughs!">
+    <link rel="canonical" href="https://saveitbro.fun/inlaw-loan-calculator" />
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="SaveItBro">
+    <meta property="og:title" content="In-Law Loan Calculator | Dowry EMI (For Fun!) – SaveItBro">
+    <meta property="og:description" content="A satirical calculator for desi weddings. Calculate how much your in-laws owe you or vice versa. Just for laughs!">
+    <meta property="og:image" content="https://saveitbro.fun/assets/thumbnail.jpg">
+    <meta property="og:url" content="https://saveitbro.fun/inlaw-loan-calculator">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="In-Law Loan Calculator | Dowry EMI (For Fun!) – SaveItBro">
+    <meta name="twitter:description" content="A satirical calculator for desi weddings. Calculate how much your in-laws owe you or vice versa. Just for laughs!">
+    <meta name="twitter:image" content="https://saveitbro.fun/assets/thumbnail.jpg">
+    <meta name="google-adsense-account" content="ca-pub-9079816190181966">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpeg" href="dahejlogo.jpg">
+    <style>
+      body { font-family: 'Inter', sans-serif; background: #f9fafb; color: #18181b; min-height: 100vh; margin: 0; padding: 0; line-height: 1.6; }
+      .navbar { background: #fff; border-bottom: 1px solid #ff9933; box-shadow: 0 2px 8px 0 #ff993322; border-radius: 1.5rem; margin: 2rem auto 2.5rem auto; max-width: 1100px; padding: 1.2rem 2.5rem; display: flex; align-items: center; justify-content: space-between; }
+      .nav-logo { font-size: 2.2rem; font-weight: 800; color: #ff9933; letter-spacing: -0.01em; font-family: 'Inter', sans-serif; }
+      .nav-links { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin-left: 2rem; }
+      .nav-links a { color: #18181b; font-weight: 600; padding: 0.5rem 1.3rem; border-radius: 0.7rem; transition: background 0.18s, color 0.18s; text-decoration: none; font-size: 1.08rem; }
+      .nav-links a.active, .nav-links a:hover { background: #ff9933; color: #fff !important; }
+      .calculator-section { background: #fff; border-radius: 1.5rem; box-shadow: 0 2px 16px 0 #ff993222; margin: 2.5rem auto; max-width: 700px; padding: 2.5rem 2rem; }
+      .calculator-section h1 { color: #ff9933; font-size: 1.7rem; font-weight: 900; margin-bottom: 1.5rem; letter-spacing: -0.01em; }
+      .form-group label { font-weight: 600; color: #18181b; margin-bottom: 0.3rem; }
+      .form-group input, .form-group select { border-radius: 0.7rem; border: 1px solid #ff9933; padding: 0.6rem 1.1rem; margin-top: 0.2rem; margin-bottom: 0.7rem; width: 100%; font-size: 1.08rem; background: #f9fafb; color: #18181b; font-family: 'Inter', sans-serif; }
+      .calculate-btn, .reset-btn { background: #ff9933; color: #fff !important; font-weight: 700; border: none; border-radius: 9999px; padding: 0.8rem 2.3rem; font-size: 1.08rem; box-shadow: 0 2px 8px 0 #ff993344; margin-top: 0.7rem; margin-bottom: 0.7rem; transition: background 0.15s, transform 0.15s, box-shadow 0.15s; }
+      .calculate-btn:hover, .reset-btn:hover { background: #ff9933; color: #fff; transform: scale(1.04); box-shadow: 0 4px 16px 0 #ff993344; }
+      @media (max-width: 900px) { .calculator-section, .navbar { max-width: 99vw; padding: 1.2rem 0.5rem; } }
+      @media (max-width: 640px) { .navbar { flex-direction: column !important; align-items: stretch !important; gap: 0.2rem !important; } .nav-links { flex-direction: column !important; gap: 0.1rem !important; width: 100% !important; align-items: stretch !important; margin-left: 0 !important; } .nav-links a { width: 100% !important; text-align: left; padding: 0.7rem 1rem; } .calculator-section { padding: 1.2rem 0.5rem; } .calculator-section h1 { font-size: 1.2rem; } .form-group input, .form-group select { font-size: 1rem; } .calculate-btn, .reset-btn { font-size: 1rem; padding: 0.6rem 1.2rem; } }
+    </style>
+</head>
+<body>
+  <nav class="navbar flex items-center gap-4 py-2 px-4">
+    <div class="flex items-center gap-2">
+      <span class="nav-logo" aria-label="SaveItBro logo">SaveItBro</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Dahej Calculator</a></li>
+      <li><a href="shaadi-budget.html">Shaadi Budget</a></li>
+      <li><a href="kundli-milan.html">Kundli Milan</a></li>
+      <li><a href="manglik.html">Manglik Checker</a></li>
+      <li><a href="gold-invest.html">Gold Investment</a></li>
+      <li><a href="festival-budget.html">Festival Budget</a></li>
+      <li><a href="rashi-nakshatra.html">Rashi/Nakshatra</a></li>
+      <li><a href="baby-names.html">Baby Names</a></li>
+      <li><a href="karva-chauth.html">Karva Chauth</a></li>
+      <li><a href="inlaw-loan.html" class="active">In-law Loan</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="calculator-section">
+      <h1>In-law Loan Calculator <span style="font-size:1.2em">😂</span></h1>
+      <form id="inlaw-form">
+        <div class="form-group">
+          <label>Gifts Taken (₹): <input type="number" name="gifts" min="0" step="1000" value="0" required></label>
+        </div>
+        <div class="form-group">
+          <label>Dowry Expected (₹): <input type="number" name="dowry" min="0" step="1000" value="0" required></label>
+        </div>
+        <button type="submit" class="calculate-btn">Get EMI Plan</button>
+      </form>
+      <section id="inlaw-result" class="hidden">
+        <h2>Your In-law EMI Plan</h2>
+        <div id="inlaw-emi"></div>
+        <div id="inlaw-fun"></div>
+        <button id="inlaw-reset" class="reset-btn">Try Again</button>
+      </section>
+    </section>
+  </main>
+  <footer style="text-align:center; margin-top:2rem; font-size:1rem; color:#888;">
+    Need help with wedding budget? <a href="index.html" style="color:#ff9933; font-weight:600;">Try our Dahej Calculator too!</a>
+  </footer>
+  <script>
+    function funnyEMI(gifts, dowry) {
+      const total = gifts + dowry;
+      if(total === 0) return "No loan! You are a model family.";
+      const emi = Math.round(total/36);
+      let fun = "";
+      if(emi < 1000) fun = "Pay with love and samosas.";
+      else if(emi < 5000) fun = "Monthly chai party with in-laws.";
+      else if(emi < 20000) fun = "Start a YouTube channel: 'EMI with Saas-Bahu'.";
+      else fun = "Sell your car, buy a cycle. Or just run!";
+      return `EMI: ₹${emi}/month for 3 years.<br>${fun}`;
+    }
+    document.getElementById('inlaw-form').onsubmit = function(e) {
+      e.preventDefault();
+      const gifts = +this.gifts.value;
+      const dowry = +this.dowry.value;
+      document.getElementById('inlaw-emi').innerHTML = funnyEMI(gifts, dowry);
+      document.getElementById('inlaw-fun').innerHTML = "(For entertainment only!)";
+      document.getElementById('inlaw-result').classList.remove('hidden');
+      this.classList.add('hidden');
+    };
+    document.getElementById('inlaw-reset').onclick = function() {
+      document.getElementById('inlaw-form').classList.remove('hidden');
+      document.getElementById('inlaw-result').classList.add('hidden');
+    };
+  </script>
+</body>
+</html>

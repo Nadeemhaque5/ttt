@@ -1,99 +1,93 @@
 /* style.css - SaveItBro Dowry Trend Estimator (Professional, Neutral) */
+/* Trillion-dollar Tailwind-inspired theme for all calculators */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;600;700&display=swap');
 body {
-  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-  background: #f7f7fa;
-  color: #2d2d2d;
-  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(120deg, #fffbe6 0%, #fff 60%, #e6ffe6 100%);
   min-height: 100vh;
 }
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #1a237e;
-  color: #fff;
-  padding: 0.7em 2em;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 12px #1a237e22;
-}
 .nav-logo {
-  font-size: 1.4em;
-  font-weight: bold;
-  letter-spacing: 1px;
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.01em;
+  color: #ff9933 !important;
+  background: linear-gradient(90deg, #FF9933 30%, #fff 50%, #138808 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5em;
-  margin: 0;
-  padding: 0;
+.navbar {
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 2px 16px 0 rgba(255,153,51,0.08), 0 1.5px 0 0 #FF9933;
+  border-radius: 1.5rem;
+  margin: 0.5rem auto 1.5rem auto;
+  max-width: 1200px;
 }
-.nav-links li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1em;
-  transition: color 0.2s;
+.nav-links a {
+  color: #FF9933;
+  font-weight: 700;
+  padding: 0.5rem 1.1rem;
+  border-radius: 9999px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
-.nav-links li a:hover {
-  color: #ffd600;
+.nav-links a.active, .nav-links a:hover {
+  background: linear-gradient(90deg, #FF9933 60%, #138808 100%);
+  color: #fff !important;
+  box-shadow: 0 2px 8px 0 #ff993344;
 }
-
-.disclaimer-banner {
-  background: #fffde7;
-  color: #b71c1c;
-  text-align: center;
-  font-size: 1em;
-  padding: 0.7em 0.5em;
-  border-bottom: 2px solid #ffd600;
+.lang-switch select {
+  border-radius: 9999px;
+  border: 1.5px solid #FF9933;
+  background: #fff;
+  color: #FF9933;
+  font-weight: 600;
+  padding: 0.2rem 1.2rem 0.2rem 0.5rem;
+  margin-left: 0.3rem;
 }
-.disclaimer-banner a {
-  color: #1a237e;
-  text-decoration: underline;
-}
-
 .hero {
-  background: linear-gradient(120deg, #e3f2fd 0%, #fffde7 100%);
-  padding: 2.5em 1em 2em 1em;
-  text-align: center;
-  border-bottom: 2px solid #e0e0e0;
-}
-.hero-content {
-  max-width: 600px;
-  margin: 0 auto;
+  background: linear-gradient(120deg, #fffbe6 0%, #fff 60%, #e6ffe6 100%);
+  border-radius: 2rem;
+  box-shadow: 0 4px 32px 0 #ff993322;
+  margin: 1.5rem auto 1.5rem auto;
+  max-width: 900px;
+  padding: 2.5rem 1.5rem 2rem 1.5rem;
 }
 .hero h1 {
-  font-size: 2.1em;
-  color: #1a237e;
-  margin-bottom: 0.2em;
-  font-weight: 700;
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #FF9933 60%, #138808 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
 }
 .subtitle {
-  color: #424242;
-  font-size: 1.15em;
-  margin-bottom: 0.5em;
+  background: #fff8e1;
+  border-left: 5px solid #FF9933;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0.5rem auto 1.2rem auto;
+  padding: 0.7rem 1.2rem;
+  box-shadow: 0 2px 12px 0 #ff993322;
+  max-width: 600px;
 }
 .hero-btn {
-  display: inline-block;
-  margin-top: 1.2em;
-  background: #1a237e;
-  color: #fff;
+  background: linear-gradient(90deg, #FF9933 60%, #138808 100%);
+  color: #fff !important;
+  font-weight: 700;
   border: none;
-  border-radius: 0.7em;
-  padding: 0.8em 2em;
-  font-size: 1.1em;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background 0.2s, transform 0.2s;
+  border-radius: 9999px;
+  padding: 0.7rem 2.5rem;
+  font-size: 1.25rem;
+  box-shadow: 0 2px 12px 0 #ff993344;
+  margin-top: 1.2rem;
+  transition: transform 0.15s, box-shadow 0.15s;
 }
 .hero-btn:hover {
-  background: #3949ab;
   transform: scale(1.04);
+  box-shadow: 0 4px 24px 0 #ff993366;
 }
-
 main {
   max-width: 720px;
   margin: 2em auto 0 auto;
@@ -110,12 +104,11 @@ section {
   padding-bottom: 1em;
 }
 .about-section h2, .faq-section h2, .resources-section h2, .calculator-section h2, .insight-section h2, .feedback-section h2 {
-  color: #1a237e;
+  color: #FF9933;
   margin-bottom: 0.5em;
   font-size: 1.2em;
-  font-weight: 600;
+  font-weight: 900;
 }
-
 .calculator-section form {
   display: flex;
   flex-direction: column;
@@ -129,15 +122,21 @@ section {
   align-items: center;
 }
 .form-group label {
-  font-size: 1rem;
-  color: #424242;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.3rem;
 }
 input[type="number"], select {
-  padding: 0.4em 0.7em;
-  border-radius: 0.5em;
-  border: 1.5px solid #bdbdbd;
-  font-size: 1em;
-  margin-left: 0.3em;
+  border-radius: 0.75rem;
+  border: 1.5px solid #FF9933;
+  padding: 0.5rem 1rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.1rem;
+  background: #fffbe6;
+  color: #333;
+  font-family: 'Inter', sans-serif;
 }
 input[type="radio"], input[type="checkbox"] {
   accent-color: #1a237e;
@@ -158,20 +157,21 @@ input[type="radio"], input[type="checkbox"] {
   margin-left: 0.3em;
 }
 button, .calculate-btn, .reset-btn {
-  background: #1a237e;
-  color: #fff;
+  background: linear-gradient(90deg, #FF9933 60%, #138808 100%);
+  color: #fff !important;
+  font-weight: 700;
   border: none;
-  border-radius: 0.7em;
-  padding: 0.7em 1.2em;
-  font-size: 1.1em;
-  font-weight: bold;
-  margin-top: 0.5em;
-  cursor: pointer;
-  transition: background 0.2s, transform 0.2s;
+  border-radius: 9999px;
+  padding: 0.7rem 2.5rem;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 12px 0 #ff993344;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  transition: transform 0.15s, box-shadow 0.15s;
 }
 button:hover, .calculate-btn:hover, .reset-btn:hover {
-  background: #3949ab;
   transform: scale(1.04);
+  box-shadow: 0 4px 24px 0 #ff993366;
 }
 .reset-btn {
   background: #e3f2fd;
@@ -293,42 +293,59 @@ button:hover, .calculate-btn:hover, .reset-btn:hover {
   text-decoration: underline;
 }
 footer {
+  background: #fffbe6;
+  color: #FF9933;
+  font-weight: 700;
+  border-radius: 1.5rem;
+  box-shadow: 0 -2px 16px 0 #ff993322;
+  margin: 2rem auto 0 auto;
+  max-width: 900px;
+  padding: 1.2rem 1.5rem;
   text-align: center;
-  margin-top: 2em;
-  color: #757575;
-  font-size: 0.95em;
-  background: #e3f2fd;
-  border-top: 2px solid #ffd600;
-  padding: 1em 0 0.5em 0;
-}
-footer a {
-  color: #1a237e;
-  text-decoration: underline;
 }
 @media (max-width: 900px) {
-  main {
+  .hero, .calculator-section, .about-section, .regional-section, .faq-section, .resources-section, footer {
     max-width: 98vw;
-    padding: 1em 0.2em 1em 0.2em;
+    padding: 1.2rem 0.5rem;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .navbar {
-    flex-direction: column;
-    gap: 0.5em;
-    padding: 0.7em 0.5em;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.2rem !important;
   }
   .nav-links {
-    gap: 0.7em;
-    font-size: 0.95em;
+    flex-direction: column !important;
+    gap: 0.1rem !important;
+    width: 100% !important;
+    align-items: stretch !important;
+  }
+  .nav-links a {
+    width: 100% !important;
+    text-align: left;
+    padding: 0.7rem 1rem;
+  }
+  .hero {
+    padding: 1.2rem 0.5rem;
   }
   .hero h1 {
-    font-size: 1.1em;
+    font-size: 1.5rem;
   }
-  #result-amount {
-    font-size: 1.1em;
+  .subtitle {
+    font-size: 1rem;
+    padding: 0.5rem 0.7rem;
   }
-  main {
-    padding: 0.7em 0.1em 0.7em 0.1em;
+  .form-group input, .form-group select {
+    font-size: 1rem;
+  }
+  .calculate-btn, .reset-btn, #share-btn, #try-again-btn {
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+  }
+  footer {
+    font-size: 1rem;
+    padding: 0.7rem 0.5rem;
   }
 }
 @keyframes fadeIn {
