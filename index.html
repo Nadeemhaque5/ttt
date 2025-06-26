@@ -179,42 +179,58 @@
      crossorigin="anonymous"></script>
   <style>
     html {
-      font-size: 18px !important; /* Increased from 16px to 18px for all elements */
+      font-size: 16px !important; /* Reduced from 18px to 16px for all elements */
     }
     body, input, select, textarea, button {
-      font-size: 1.125rem !important; /* 18px base for all text elements */
-      line-height: 1.6;
+      font-size: 1rem !important; /* 16px base for all text elements */
+      line-height: 1.5;
     }
-    h1 { font-size: 2.5rem !important; }
-    h2 { font-size: 2rem !important; }
-    h3 { font-size: 1.5rem !important; }
-    h4 { font-size: 1.25rem !important; }
-    h5 { font-size: 1.125rem !important; }
-    h6 { font-size: 1rem !important; }
+    h1 { font-size: 2.25rem !important; }
+    h2 { font-size: 1.75rem !important; }
+    h3 { font-size: 1.25rem !important; }
+    h4 { font-size: 1.125rem !important; }
+    h5 { font-size: 1rem !important; }
+    h6 { font-size: 0.95rem !important; }
     .navbar .nav-logo {
-      font-size: 2.25rem !important; /* Larger nav brand */
-      color: #FF9933 !important; /* Saffron instead of blue */
+      font-size: 2rem !important; /* Slightly smaller nav brand */
+      color: #FF9933 !important;
     }
     .hero-btn, .calculate-btn, .reset-btn, #share-btn, #try-again-btn {
-      font-size: 1.25rem !important;
-      color: #FF9933 !important; /* Saffron text for buttons */
+      font-size: 1.1rem !important;
+      color: #FF9933 !important;
       border-color: #FF9933 !important;
     }
     label, select, input, option {
-      font-size: 1.125rem !important;
+      font-size: 1rem !important;
     }
     .subtitle {
-      font-size: 1.25rem !important;
+      font-size: 1.1rem !important;
     }
     .faq-section h3 {
-      font-size: 1.25rem !important;
+      font-size: 1.1rem !important;
     }
     .faq-section p, .about-section p, .regional-section p, .resources-section p, .resources-section ul, .resources-section li {
-      font-size: 1.125rem !important;
+      font-size: 1rem !important;
     }
-    /* Example: Custom font for headings */
     h1, h2, h3, h4, h5, h6 {
       font-weight: bold;
+    }
+    /* Reduce vertical spacing for a more compact look */
+    .hero-content, .about-section, .calculator-section, .regional-section, .faq-section, .resources-section {
+      margin-top: 1.25rem !important;
+      margin-bottom: 1.25rem !important;
+      padding-top: 0.5rem !important;
+      padding-bottom: 0.5rem !important;
+    }
+    .form-group {
+      margin-bottom: 0.75rem !important;
+    }
+    .navbar, footer {
+      padding-top: 0.5rem !important;
+      padding-bottom: 0.5rem !important;
+    }
+    .adsbygoogle {
+      margin: 1rem 0 !important;
     }
     /* Add any custom Tailwind overrides here */
   </style>
